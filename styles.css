@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background initially */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  padding: 15px 20px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+/* Content area styles */
+.content {
+  padding-top: 80px; /* Ensure content starts below the fixed header */
+  height: 1500px; /* Just for demonstration purposes */
+}
